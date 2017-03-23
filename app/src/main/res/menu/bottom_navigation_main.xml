@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_bengaluru"
+        android:enabled="true"
+        android:icon="@drawable/bengaluru"
+        android:title="@string/bangalore"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_delhi"
+        android:enabled="true"
+        android:icon="@drawable/delhi"
+        android:title="@string/delhi"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_chennai"
+        android:enabled="true"
+        android:icon="@drawable/chennai"
+        android:title="@string/chennai"
+        app:showAsAction="ifRoom" />
+</menu>

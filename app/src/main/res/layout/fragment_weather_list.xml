@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/vw_error">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/row_blue"
+            android:layout_centerInParent="true"
+            android:textSize="14dp"
+            android:padding="10dp"
+            android:text=""
+            android:id="@+id/txt_error"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnretry"
+            android:layout_below="@+id/txt_error"
+            android:layout_centerHorizontal="true"
+            android:text="Retry"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:visibility="gone"
+        android:name="com.mrd.shopsup.ui.WeatherFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.mrd.shopsup.ui.WeatherFragment"
+        tools:listitem="@layout/fragment_weather" />
+</FrameLayout>
+
